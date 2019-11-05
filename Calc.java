@@ -12,6 +12,7 @@ public class Calc {
             int b;
             int c;
             int r;
+            float rd;
             Scanner in = new Scanner(System.in);
             System.out.println("Input number 1");
             a = in.nextInt();
@@ -38,8 +39,8 @@ public class Calc {
             }
             if (c == 3) {
                 try {
-                    r = a/b;
-                    System.out.println("The result: " + a + "/" + b + "=" + r);
+                    rd = (float)a/b;
+                    System.out.println("The result: " + a + "/" + b + "=" + rd);
                 } catch (Exception e) {
                     System.out.println("Division not possible!!");
                 }
