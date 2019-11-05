@@ -1,3 +1,6 @@
+//Watch out for big numbers - disable it
+//Watch out for non-numerical input
+
 package com.company;
 
 import java.util.Scanner;
