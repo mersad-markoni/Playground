@@ -1,5 +1,5 @@
 //Watch out for big numbers - disable it
-//Watch out for non-numerical input
+//Watch out for non-numerical input - 1108: Added try/catch - Better way is to do it with while loops.
 
 package com.company;
 
