@@ -1,0 +1,220 @@
+//Personality test. Add questions. Check the high and low points.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Quiz {
+    public static void main(String[] args) {
+
+        byte q1 = 0;
+        byte q2 = 0;
+        byte q3 = 0;
+        byte q4 = 0;
+        byte q5 = 0;
+        byte q6 = 0;
+        byte q7 = 0;
+        byte q8 = 0;
+        byte q9 = 0;
+        byte q10 = 0;
+        Scanner info = new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String name = info.next();
+        System.out.println("Enter your age:");
+        byte age = info.nextByte();
+        System.out.println("What is your gender?");
+        System.out.println("1. Boy");
+        System.out.println("2. Girl");
+        System.out.println("3. I'm confused");
+        try {
+            int gender = info.nextInt();
+        }
+        catch (Exception e){
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        System.out.println("Please read the following set of questions carefully and respond recklessly:");
+        //QUESTION SET START
+        System.out.println("Question 1: I see myself as extraverted, enthusiastic.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+    try {
+        q1 = info.nextByte();
+    }
+    catch (Exception e) {
+        System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+    }
+        //NEXT QUESTION 2
+        System.out.println("Question 2: I see myself as critical, quarrelsome.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q2 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 3
+        System.out.println("Question 3: I see myself as dependable, self-disciplined.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q3 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 4
+        System.out.println("Question 4: I see myself as anxious, easily upset.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q4 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 5
+        System.out.println("Question 5: I see myself as open to new experiences, complex.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q5 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 6
+        System.out.println("Question 6: I see myself as reserved, quiet.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q6 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 7
+        System.out.println("Question 7: I see myself as sympathetic, warm.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q7 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 8
+        System.out.println("Question 8: I see myself as disorganized, careless.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q8 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 9
+        System.out.println("Question 9: I see myself as calm, emotionally stable.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q9 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+        //NEXT QUESTION 10
+        System.out.println("Question 10: I see myself as conventional, uncreative.");
+        System.out.println("1 - Disagree strongly");
+        System.out.println("2 - Disagree moderately");
+        System.out.println("3 - Disagree a little");
+        System.out.println("4 - Neither agree nor disagree");
+        System.out.println("5 - Agree a little");
+        System.out.println("6 - Agree moderately");
+        System.out.println("7 - Agree strongly");
+        try {
+            q10 = info.nextByte();
+        }
+        catch (Exception e) {
+            System.out.println("Not a valid response!! Error 404!! EXECUTE RESET");
+        }
+       String messageHeader ="Well hello there " + name + ". ";//BOY OR GIRL, GET IT FROM ARRAY
+
+        System.out.println("Test output: " + name);
+
+    }
+}
+
+
+/*
+     // Method to find maximum in arr[]
+     static int largest()
+     {
+         int i;
+
+         // Initialize maximum element
+         int max = arr[0];
+
+         // Traverse array elements from second and
+         // compare every element with current max
+         for (i = 1; i < arr.length; i++)
+             if (arr[i] > max)
+                 max = arr[i];
+
+         return max;
+     }
+ */
+
+/*  CHECKING FOR REPETITION OF CERTAIN STRINGS WHITHIN A TEXT
+        int broj = 0;
+        String varijabla = "mahinalno";
+
+        while (varijabla.contains("sequence")) {
+            broj++;
+            varijabla = varijabla.replaceFirst("correctsequence","XXX");
+ */
