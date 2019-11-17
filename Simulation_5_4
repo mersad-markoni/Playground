@@ -1,0 +1,39 @@
+//Robot simulation (Task 5.4)
+
+//Error 1 - Counter inside the wrong loop.
+
+package com.company;
+
+public class Simulation {
+
+    public static void main(String[] args) {
+        int end = 0;
+        int sims;
+        for (sims = 0; sims < 100000; sims++) {
+            int x = 0;
+            int y = 0;
+            System.out.println("Simulation: " + sims);
+            for (int i = 0; i < 10; i++) {
+                int dir = (int) (Math.random() * ((4 - 1) + 1)) + 4;
+                if (dir == 1) {
+                    y++;
+                } else if (dir == 2) {
+                    y--;
+                } else if (dir == 3) {
+                    x--;
+                } else if (dir == 4) {
+                    x++;
+                }
+                System.out.println("Step: " +i);
+            }
+            if ((x == 0) && (y == 0)) {
+                end++;
+                System.out.println("Cilj: " + end);
+            }
+
+        }
+        double res = (double) end/ sims;
+        System.out.println(end);
+        System.out.println(res);
+    }
+}
